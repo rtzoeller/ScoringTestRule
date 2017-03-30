@@ -1,0 +1,25 @@
+apply plugin: "java"
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+version = "0.0.1"
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ["src"]
+        }
+    }
+}
+
+jar {
+    from "LICENSE"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "junit:junit:4.12"
+}
